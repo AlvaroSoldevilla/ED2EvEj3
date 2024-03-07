@@ -17,6 +17,12 @@ public class Fecha {
         minuto = calendario.get(Calendar.MINUTE);
     }
 
+    public Fecha(int ano, int mes, int dia) {
+        this.ano = ano;
+        this.mes = mes;
+        this.dia = dia;
+    }
+
     boolean menor90minutos(Fecha fPosterior) {
         boolean ok = false;
         int auxh = hora * 60 + minuto + 90;
